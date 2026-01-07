@@ -1,0 +1,13 @@
+/*style in frontend/index.css */
+.coin-info-desc,
+.coin-info-heading{
+    margin: 1rem;
+}
+
+.coin-info-desc{
+    text-decoration: underline !important;
+}
+.coin-info-desc a:hover{
+    color: var(--blue);
+
+}

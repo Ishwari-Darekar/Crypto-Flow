@@ -1,0 +1,322 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --white: #fff;
+    --black:#111;
+    --blue:#2bd7d7;
+    --grey:#888;
+    --darkgray:#1b1b1b;
+    --green:#61c96f;
+    --red:#f94141;
+
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    background-color: var(--black);
+    color: var(--white);
+    /*height: 200vh;*/
+    font-family: "Inter", sans-serif;
+}
+
+
+/*----------------SCROLLBAR-----------------------------------------------------------------------*/
+/*word selection*/
+::selection{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:var(--white);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: 3rem;
+}
+/*-----------------------------------------------------------------------------------------*/
+
+
+/*--------------------------Text colour of nav bar--------------------------------------------------*/
+a{
+  color: var(--white) !important;
+  text-decoration: none !important;
+}
+/*
+Source - https://stackoverflow.com/q
+Posted by user885355, modified by community. See post 'Timeline' for change history
+Retrieved 2025-12-30, License - CC BY-SA 3.0
+*/
+
+img {
+  -webkit-user-drag: none; 
+  -khtml-user-drag: none;    
+  -moz-user-drag: none;  
+  -o-user-drag:none;   
+
+}
+
+
+
+
+/*-----------------------------------grey-wrapper-----------------------------------------*/
+/* ===============================
+   Coin Page – All Styles
+   =============================== */
+
+/* Loading Text */
+.coinpage-loading-text {
+  color: white;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Wrapper Card for Top Row */
+.coinpage-grey-wrapper {
+  background: linear-gradient(135deg, #1b1b1b 0%, #121212 100%);
+  margin: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Main Coin Row */
+.coinpage-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  color: white;
+}
+
+/* Coin Image */
+.coinpage-coin-image {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+/* Name Section */
+.coinpage-name-section {
+  min-width: 120px;
+}
+
+.coinpage-symbol {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.coinpage-name {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #a0a0a0;
+}
+
+/* 24h Change */
+.coinpage-change {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.coinpage-change.positive {
+  color: #4caf50;
+  border: 1px solid #4caf50;
+  background: rgba(76, 175, 80, 0.08);
+}
+
+.coinpage-change.negative {
+  color: #f44336;
+  border: 1px solid #f44336;
+  background: rgba(244, 67, 54, 0.08);
+}
+
+/* Trend Icon */
+.coinpage-trend {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coinpage-trend.positive {
+  color: #4caf50;
+  border: 2px solid #4caf50;
+}
+
+.coinpage-trend.negative {
+  color: #f44336;
+  border: 2px solid #f44336;
+}
+
+/* Price, Market Cap & Volume */
+.coinpage-price,
+.coinpage-marketcap,
+.coinpage-volume {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left: auto; /* aligns to right */
+  min-width: 150px;
+}
+
+.coinpage-price {
+  
+  font-size: 1.2rem;
+}
+
+.coinpage-price.positive {
+  color: #4caf50 !important; /* green for high price */
+}
+
+.coinpage-price.negative {
+  color: #f44336 !important; /* red for low price */
+}
+
+.coinpage-marketcap,
+.coinpage-volume {
+  color: #e0e0e0;
+  font-size: 0.95rem;
+}
+
+.coinpage-marketcap {
+  margin-top: 0.3rem;
+}
+
+.coinpage-volume {
+  margin-top: 0.3rem;
+}
+
+/* ===============================
+   Separate Description Box
+   =============================== */
+.coinpage-description-wrapper {
+  background-color: #121212;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  color: #e0e0e0;
+  margin: 1rem 1.5rem 2rem 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.coinpage-description-wrapper h3 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.coinpage-description-wrapper a {
+  color: #4dabf5;
+  text-decoration: none;
+}
+
+.coinpage-description-wrapper a:hover {
+  text-decoration: underline;
+}
+
+
+/* ===============================
+   Read More / Read Less link
+   =============================== */
+.coinpage-readmore {
+  color: var(--grey);        /* Makes it blue like your links */
+  cursor: pointer;       /* Shows hand pointer on hover */
+  font-weight: 500;      /* Slightly bolder for visibility */
+  margin-left: 5px;      /* Small spacing from text */
+  text-decoration: underline; /* Optional: underline for link-like feel */
+  transition: color 0.2s ease;
+}
+
+.coinpage-readmore:hover {
+  color:var(--grey);       /* Slightly darker blue on hover */
+}
+
+
+/* ===============================
+   Responsive
+   =============================== */
+@media (max-width: 768px) {
+  .coinpage-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .coinpage-price,
+  .coinpage-marketcap,
+  .coinpage-volume {
+    margin-left: 0;
+    min-width: 100%;
+    text-align: left;
+    font-size: 1.05rem;
+  }
+}
+
+
+/*----------------------Chart-------------------------------------------*/
+/* ===============================
+   Chart Box (Same Style as Cards)
+   =============================== */
+
+.coinpage-chart-box {
+  background: linear-gradient(135deg, #1b1b1b 0%, #121212 100%);
+  margin: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+/* Chart title */
+.coinpage-chart-title {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Chart container */
+.coinpage-chart-wrapper {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+/* Responsive chart height */
+@media (max-width: 768px) {
+  .coinpage-chart-wrapper {
+    height: 300px;
+  }
+}
+
+/*
+.coin-says-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem;
+}*/
+

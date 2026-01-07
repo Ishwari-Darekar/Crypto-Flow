@@ -1,0 +1,16 @@
+.select-coins-container {
+  display: flex;
+  gap: 1.8rem;
+  margin: 1.2rem 0;
+}
+
+.select-box {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.select-box p {
+  color: #e5e7eb;
+  font-size: 0.85rem;
+}

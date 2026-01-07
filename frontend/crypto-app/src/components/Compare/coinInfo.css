@@ -1,0 +1,60 @@
+.coin-info-card {
+  background: linear-gradient(180deg, #121212, #0e0e0e);
+  border-radius: 14px;
+  padding: 14px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #1f1f1f;
+  margin-bottom: 14px;
+}
+
+.coin-left {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.coin-left img {
+  width: 36px;
+  height: 36px;
+}
+
+.symbol {
+  color: #fff;
+  font-weight: 600;
+}
+
+.name {
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+.coin-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(110px, auto));
+  gap: 26px;
+  font-size: 13px;
+  color: #e5e7eb;
+}
+
+.price.green { color: #16c784; }
+.price.red { color: #ea3943; }
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.badge.green {
+  color: #16c784;
+  background: rgba(22,199,132,0.15);
+  border: 1px solid #16c784;
+}
+
+.badge.red {
+  color: #ea3943;
+  background: rgba(234,57,67,0.15);
+  border: 1px solid #ea3943;
+}
